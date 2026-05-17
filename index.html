@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polyrythms</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <h1>Polyrythms</h1>
+      <div class="canvas-frame">
+        <canvas id="myCanvas"></canvas>
+      </div>
+      <div class="sound-help">
+        <button id="enableSoundButton" class="sound-enable-button" type="button">Enable sound</button>
+        <p>Tap or click once if you want the tiny clicks to play.</p>
+      </div>
+      <div class="controls">
+        <div class="control-row">
+          <label for="cosRange">Cos multiplier</label>
+          <input id="cosRange" type="range" min="1" max="12" step="1" value="6">
+          <span id="cosValue">6</span>
+        </div>
+        <div class="control-row">
+          <label for="sinRange">Sin multiplier</label>
+          <input id="sinRange" type="range" min="1" max="12" step="1" value="6">
+          <span id="sinValue">6</span>
+        </div>
+      </div>
+    </div>
+    <script src="track.js"></script>
+    <script src="ball.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
